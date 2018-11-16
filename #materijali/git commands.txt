@@ -1,11 +1,38 @@
-#GIT BASH here
+-- =================================================================
+   #GIT BASH here
+   #shortcut for pasting (instead of ctrl+v): ctrl + shift + insert
+-- =================================================================
+
+
+
+$ git config --global credential.helper "cache --timeout=3600"   #set password cache timeout to something large
+
+
+
+
+   #create .gitignore., it automatically resolves to .gitignore
+   #add filenames and directories/ to .gitignore
 
 $ git init
 
-#create .gitignore., it automatically resolves to .gitignore
-#add filenames and directories/ to .gitignore
 
 $ git add
-
 $ git commit -m "first commit"
+$ git remote add origin ...      #repository URL (press clone or download button on GitHub web client)
+$ git remote -v                  #verify that the remote URL is correct
+
+
+
+
+$ git push origin master
+
+   #$ git push --force --set-upstream origin master
+   #if you mess up bigtime, and want to destroy every change on remote, but want to restore a local copy
+
+$ git push                                        #from now on use this command
+
+
+
+
+
 
