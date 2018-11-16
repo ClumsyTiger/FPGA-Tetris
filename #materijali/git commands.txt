@@ -1,0 +1,11 @@
+#GIT BASH here
+
+$ git init
+
+#create .gitignore., it automatically resolves to .gitignore
+#add filenames and directories/ to .gitignore
+
+$ git add
+
+$ git commit -m "first commit"
+

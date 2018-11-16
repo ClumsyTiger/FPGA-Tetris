@@ -1,0 +1,34 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity RF_EDGE is
+
+	port
+	(
+		sig_in : in  std_logic;
+		ris	 : out std_logic;
+		fal    : out std_logic;
+		
+		clk	 : in  std_logic
+	);
+
+end entity;
+
+
+architecture rtl of RF_EDGE is
+	signal rising, falling : std_logic;
+begin
+
+	process (clk)
+	begin
+		if (rising_edge(clk)) then
+			ris <= rising;
+			fal <= falling;
+		end if;
+	end process;
+
+	rising  <= '1' when rising_edge (sig_in) else '0';
+	falling <= '1' when falling_edge(sig_in) else '0';
+
+end rtl;
