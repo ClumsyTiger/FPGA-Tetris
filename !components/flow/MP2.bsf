@@ -4,7 +4,7 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 1991-2014 Altera Corporation
+Copyright (C) 1991-2013 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -31,13 +31,6 @@ applicable agreement for further details.
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
-		(pt 0 80)
-		(input)
-		(text "S[0..0]" (rect 0 0 33 12)(font "Arial" ))
-		(text "S[0..0]" (rect 21 75 54 87)(font "Arial" ))
-		(line (pt 0 80)(pt 16 80)(line_width 3))
-	)
-	(port
 		(pt 0 48)
 		(input)
 		(text "X1[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
@@ -45,10 +38,24 @@ applicable agreement for further details.
 		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
+		(pt 0 64)
+		(input)
+		(text "en" (rect 0 0 11 12)(font "Arial" ))
+		(text "en" (rect 21 59 32 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "S[0..0]" (rect 0 0 33 12)(font "Arial" ))
+		(text "S[0..0]" (rect 21 75 54 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
 		(pt 120 32)
 		(output)
 		(text "Y[wid-1..0]" (rect -64 0 -11 12)(font "Arial" ))
-		(text "Y[]" (rect 87 27 102 39)(font "Arial" ))
+		(text "Y[]" (rect 87 27 99 39)(font "Arial" ))
 		(line (pt 120 32)(pt 104 32)(line_width 3))
 	)
 	(parameter
@@ -60,5 +67,5 @@ applicable agreement for further details.
 		(text "MP2" (rect 48 48 79 64)(font "Arial" (color 0 0 0)(font_size 10)(bold)))
 		(rectangle (rect 16 16 104 96))
 	)
-	(annotation_block (parameter)(rect 208 32 392 64))
+	(annotation_block (parameter)(rect 200 -16 384 16))
 )

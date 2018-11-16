@@ -4,7 +4,7 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 1991-2014 Altera Corporation
+Copyright (C) 1991-2013 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -78,6 +78,13 @@ applicable agreement for further details.
 		(text "X7[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
 		(text "X7[]" (rect 21 139 39 151)(font "Arial" ))
 		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "en" (rect 0 0 11 12)(font "Arial" ))
+		(text "en" (rect 21 155 32 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160))
 	)
 	(port
 		(pt 0 176)

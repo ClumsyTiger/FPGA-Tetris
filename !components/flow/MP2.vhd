@@ -14,8 +14,6 @@ entity MP2 is
 	(
 		X0	: in  std_logic_vector(wid-1 downto 0) := (others => '0');
 		X1	: in  std_logic_vector(wid-1 downto 0) := (others => '0');
-		X2 : in  std_logic_vector(wid-1 downto 0) := (others => '0');
-		X3	: in  std_logic_vector(wid-1 downto 0) := (others => '0');
 		Y  : out std_logic_vector(wid-1 downto 0);
 		
 		en : in  std_logic := '0';
