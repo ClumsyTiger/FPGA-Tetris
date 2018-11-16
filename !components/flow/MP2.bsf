@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 64 64 248 176)
+	(rect 64 64 184 176)
 	(text "MP2" (rect 5 0 26 12)(font "Arial" ))
 	(text "inst" (rect 8 96 25 108)(font "Arial" ))
 	(port
@@ -31,11 +31,11 @@ applicable agreement for further details.
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
-		(pt 0 64)
+		(pt 0 80)
 		(input)
 		(text "S[0..0]" (rect 0 0 33 12)(font "Arial" ))
-		(text "S[0..0]" (rect 21 59 54 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64)(line_width 3))
+		(text "S[0..0]" (rect 21 75 54 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
 	)
 	(port
 		(pt 0 48)
@@ -45,11 +45,11 @@ applicable agreement for further details.
 		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
-		(pt 184 32)
+		(pt 120 32)
 		(output)
-		(text "Y[wid-1..0]" (rect 0 0 53 12)(font "Arial" ))
-		(text "Y[]" (rect 151 27 166 39)(font "Arial" ))
-		(line (pt 184 32)(pt 168 32)(line_width 3))
+		(text "Y[wid-1..0]" (rect -64 0 -11 12)(font "Arial" ))
+		(text "Y[]" (rect 87 27 102 39)(font "Arial" ))
+		(line (pt 120 32)(pt 104 32)(line_width 3))
 	)
 	(parameter
 		"wid"
@@ -57,7 +57,8 @@ applicable agreement for further details.
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
-		(rectangle (rect 16 16 168 96))
+		(text "MP2" (rect 48 48 79 64)(font "Arial" (color 0 0 0)(font_size 10)(bold)))
+		(rectangle (rect 16 16 104 96))
 	)
-	(annotation_block (parameter)(rect 248 32 432 64))
+	(annotation_block (parameter)(rect 208 32 392 64))
 )

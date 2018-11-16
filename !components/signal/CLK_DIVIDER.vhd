@@ -12,8 +12,8 @@ entity CLK_DIVIDER is
 
 	port
 	(
-		in_clk	: in  std_logic;   --                                                                 -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-		out_clk	: out std_logic;   --pulse iste frekvencije kao i in_clk, ali vecinu vremena je 0 :   ------______------______------______
+		in_clk	: in  std_logic;   --      -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+		out_clk	: out std_logic;   --      ------______------______------______   out_clk nize frekvencije od in_clk
 		reset	  	: in  std_logic := '0';
 		pause		: in  std_logic := '0'
 	);
@@ -25,7 +25,7 @@ architecture rtl of CLK_DIVIDER is
 begin
 
 	process (in_clk)
-		variable cnt : natural range maxnum downto 0;   --broji se od maxnum do 0
+		variable cnt : natural range maxnum downto 0 := maxnum;   --broji se od maxnum do 0
 		variable out_clk_next: std_logic := '0';
 	begin
 	

@@ -17,7 +17,7 @@ end entity;
 
 
 architecture rtl of RF_EDGE is
-	signal buff : std_logic_vector(1 downto 0);
+	signal buff : std_logic_vector(1 downto 0) := (others => '0');
 begin
 
 	process (clk)

@@ -20,38 +20,54 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 64 64 200 144)
-	(text "DEBOUNCE" (rect 5 0 67 12)(font "Arial" ))
-	(text "inst" (rect 8 64 25 76)(font "Arial" ))
+	(rect 64 64 200 176)
+	(text "PWM" (rect 5 0 30 12)(font "Arial" ))
+	(text "inst" (rect 8 96 25 108)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "sig_in" (rect 0 0 28 12)(font "Arial" ))
-		(text "sig_in" (rect 21 27 49 39)(font "Arial" ))
+		(text "in_clk" (rect 0 0 28 12)(font "Arial" ))
+		(text "in_clk" (rect 21 27 49 39)(font "Arial" ))
 		(line (pt 0 32)(pt 16 32))
 	)
 	(port
 		(pt 0 48)
 		(input)
-		(text "clk" (rect 0 0 14 12)(font "Arial" ))
-		(text "clk" (rect 21 43 35 55)(font "Arial" ))
+		(text "reset" (rect 0 0 24 12)(font "Arial" ))
+		(text "reset" (rect 21 43 45 55)(font "Arial" ))
 		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "pause" (rect 0 0 29 12)(font "Arial" ))
+		(text "pause" (rect 21 59 50 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
 	)
 	(port
 		(pt 136 32)
 		(output)
-		(text "deb" (rect 0 0 17 12)(font "Arial" ))
-		(text "deb" (rect 101 27 118 39)(font "Arial" ))
+		(text "pulse" (rect -8 0 17 12)(font "Arial" ))
+		(text "pulse" (rect 94 27 119 39)(font "Arial" ))
 		(line (pt 136 32)(pt 120 32))
 	)
 	(parameter
-		"wid"
-		"10"
+		"clk_freq_MHz"
+		"50"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"T_out_ms"
+		"100"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
-		(text "DEB" (rect 56 32 86 48)(font "Arial" (color 0 0 0)(font_size 10)(bold)))
-		(rectangle (rect 16 16 120 64))
+		(line (pt 64 80)(pt 48 80)(color 0 0 0)(line_width 3))
+		(line (pt 64 64)(pt 80 64)(color 0 0 0)(line_width 3))
+		(line (pt 80 80)(pt 80 64)(color 0 0 0)(line_width 3))
+		(line (pt 64 80)(pt 64 64)(color 0 0 0)(line_width 3))
+		(line (pt 80 80)(pt 112 80)(color 0 0 0)(line_width 3))
+		(rectangle (rect 16 16 120 96))
 	)
-	(annotation_block (parameter)(rect 200 32 384 64))
+	(annotation_block (parameter)(rect 200 16 400 64))
 )

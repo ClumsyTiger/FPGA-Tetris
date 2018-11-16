@@ -19,7 +19,7 @@ architecture rtl of SEVEN_SEG is
 	signal dp : std_logic := '0';
 begin
 	
-	process (en, x) is
+	process (en, x, dp) is
 	begin
 		if en = '1' then
 			case x is

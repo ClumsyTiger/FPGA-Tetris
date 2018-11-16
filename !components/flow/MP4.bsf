@@ -18,52 +18,52 @@ programming logic devices manufactured by Altera and sold by
 Altera or its authorized distributors.  Please refer to the 
 applicable agreement for further details.
 */
-(header "symbol" (version "1.1"))
+(header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 200 160)
-	(text "MP4" (rect 5 0 25 12)(font "Arial" ))
-	(text "inst" (rect 8 128 20 140)(font "Arial" ))
+	(rect 64 64 184 208)
+	(text "MP4" (rect 5 0 26 12)(font "Arial" ))
+	(text "inst" (rect 8 128 25 140)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "X0[wid-1..0]" (rect 0 0 43 12)(font "Arial" ))
-		(text "X0[]" (rect 21 27 64 39)(font "Arial" ))
+		(text "X0[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "X0[]" (rect 21 27 39 39)(font "Arial" ))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
 		(pt 0 48)
 		(input)
-		(text "X1[wid-1..0]" (rect 0 0 42 12)(font "Arial" ))
-		(text "X1[]" (rect 21 43 63 55)(font "Arial" ))
+		(text "X1[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "X1[]" (rect 21 43 39 55)(font "Arial" ))
 		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
 		(pt 0 64)
 		(input)
-		(text "X2[wid-1..0]" (rect 0 0 43 12)(font "Arial" ))
-		(text "X2[]" (rect 21 59 64 71)(font "Arial" ))
+		(text "X2[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "X2[]" (rect 21 59 39 71)(font "Arial" ))
 		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
 		(pt 0 80)
 		(input)
-		(text "X3[wid-1..0]" (rect 0 0 43 12)(font "Arial" ))
-		(text "X3[]" (rect 21 75 64 87)(font "Arial" ))
+		(text "X3[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "X3[]" (rect 21 75 39 87)(font "Arial" ))
 		(line (pt 0 80)(pt 16 80)(line_width 3))
 	)
 	(port
-		(pt 0 96)
+		(pt 0 112)
 		(input)
-		(text "S[1..0]" (rect 0 0 24 12)(font "Arial" ))
-		(text "S[1..0]" (rect 21 91 45 103)(font "Arial" ))
-		(line (pt 0 96)(pt 16 96)(line_width 3))
+		(text "S[1..0]" (rect 0 0 33 12)(font "Arial" ))
+		(text "S[1..0]" (rect 21 107 54 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
 	)
 	(port
-		(pt 184 32)
+		(pt 120 32)
 		(output)
-		(text "Y[wid-1..0]" (rect 0 0 40 12)(font "Arial" ))
-		(text "Y[]" (rect 123 27 163 39)(font "Arial" ))
-		(line (pt 184 32)(pt 168 32)(line_width 3))
+		(text "Y[wid-1..0]" (rect -64 0 -11 12)(font "Arial" ))
+		(text "Y[]" (rect 87 27 102 39)(font "Arial" ))
+		(line (pt 120 32)(pt 104 32)(line_width 3))
 	)
 	(parameter
 		"wid"
@@ -71,7 +71,8 @@ applicable agreement for further details.
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
-		(rectangle (rect 16 16 168 128)(line_width 1))
+		(text "MP4" (rect 48 64 79 80)(font "Arial" (color 0 0 0)(font_size 10)(bold)))
+		(rectangle (rect 16 16 104 128))
 	)
-	(annotation_block (parameter)(rect 200 -64 300 16))
+	(annotation_block (parameter)(rect 192 32 376 64))
 )

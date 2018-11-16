@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 64 64 272 320)
+	(rect 64 64 208 320)
 	(text "REG" (rect 5 0 28 12)(font "Arial" ))
 	(text "inst" (rect 8 240 25 252)(font "Arial" ))
 	(port
@@ -87,25 +87,25 @@ applicable agreement for further details.
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
-		(pt 208 32)
+		(pt 144 32)
 		(output)
-		(text "Dout[wid-1..0]" (rect 8 0 76 12)(font "Arial" ))
-		(text "Dout[]" (rect 162 27 192 39)(font "Arial" ))
-		(line (pt 208 32)(pt 192 32)(line_width 3))
+		(text "Dout[wid-1..0]" (rect -56 0 12 12)(font "Arial" ))
+		(text "Dout[]" (rect 98 27 128 39)(font "Arial" ))
+		(line (pt 144 32)(pt 128 32)(line_width 3))
 	)
 	(port
-		(pt 208 48)
+		(pt 144 48)
 		(output)
-		(text "zeros" (rect 8 0 33 12)(font "Arial" ))
-		(text "zeros" (rect 166 43 191 55)(font "Arial" ))
-		(line (pt 208 48)(pt 192 48))
+		(text "zeros" (rect -56 0 -31 12)(font "Arial" ))
+		(text "zeros" (rect 102 43 127 55)(font "Arial" ))
+		(line (pt 144 48)(pt 128 48))
 	)
 	(port
-		(pt 208 64)
+		(pt 144 64)
 		(output)
-		(text "ones" (rect 8 0 31 12)(font "Arial" ))
-		(text "ones" (rect 168 59 187 71)(font "Arial" ))
-		(line (pt 208 64)(pt 192 64))
+		(text "ones" (rect -56 0 -33 12)(font "Arial" ))
+		(text "ones" (rect 104 59 127 71)(font "Arial" ))
+		(line (pt 144 64)(pt 128 64))
 	)
 	(parameter
 		"wid"
@@ -118,10 +118,10 @@ applicable agreement for further details.
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
-		(text " REG" (rect 88 112 124 128)(font "Arial" (color 0 0 0)(font_size 10)(bold)))
+		(text " REG" (rect 56 112 92 128)(font "Arial" (color 0 0 0)(font_size 10)(bold)))
 		(line (pt 16 88)(pt 24 96))
 		(line (pt 24 96)(pt 16 104))
-		(rectangle (rect 16 16 192 240))
+		(rectangle (rect 16 16 128 240))
 	)
 	(annotation_block (parameter)(rect 272 16 456 64))
 )
