@@ -8,7 +8,7 @@ entity REG is
 	generic
 	(
 		wid     : natural := 10;
-		beg_val : natural := 0
+		def_val : natural := 0
 	);
 
 	port 
@@ -36,7 +36,7 @@ entity REG is
 end entity;
 
 architecture rtl of REG is
-	signal data, data_next : std_logic_vector(wid-1 downto 0) := std_logic_vector(to_unsigned( beg_val, wid ));
+	signal data, data_next : std_logic_vector(wid-1 downto 0) := std_logic_vector(to_unsigned( def_val, wid ));
 begin
 	Dout  <= data;
 	zeros <= '1' when data = 0          else '0';
