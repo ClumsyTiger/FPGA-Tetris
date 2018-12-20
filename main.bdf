@@ -4,7 +4,7 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 1991-2013 Altera Corporation
+Copyright (C) 1991-2014 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 40 32 208 48)
+	(rect 88 -48 256 -32)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "x[9..0]" (rect 5 0 36 12)(font "Arial" ))
 	(pt 168 8)
@@ -34,11 +34,11 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "GND" (rect 128 7 149 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect -16 48 40 64))
+	(annotation_block (location)(rect 24 -48 80 -32))
 )
 (pin
 	(input)
-	(rect 40 72 208 88)
+	(rect 88 104 256 120)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "clk" (rect 5 0 19 12)(font "Arial" ))
 	(pt 168 8)
@@ -51,13 +51,13 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "GND" (rect 128 7 149 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect -16 88 40 104))
+	(annotation_block (location)(rect 24 104 80 120))
 )
 (pin
 	(input)
-	(rect 40 248 208 264)
+	(rect 88 -16 256 0)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "btn_[2..0]" (rect 5 0 52 12)(font "Arial" ))
+	(text "notbtn[2..0]" (rect 5 0 61 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -68,11 +68,45 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "GND" (rect 128 7 149 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect -8 264 40 280))
+	(annotation_block (location)(rect 24 -16 80 0))
+)
+(pin
+	(input)
+	(rect 88 32 256 48)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "Bin_PS2" (rect 5 0 46 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "GND" (rect 128 7 149 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 24 32 80 48))
+)
+(pin
+	(input)
+	(rect 88 56 256 72)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "clk_PS2" (rect 5 0 45 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "GND" (rect 128 7 149 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 24 56 80 72))
 )
 (pin
 	(output)
-	(rect 408 32 584 48)
+	(rect 456 -48 632 -32)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "z[9..0]" (rect 90 0 120 12)(font "Arial" ))
 	(pt 0 8)
@@ -85,13 +119,13 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 584 48 640 64))
+	(annotation_block (location)(rect 640 -48 696 -32))
 )
 (pin
 	(output)
-	(rect 408 64 584 80)
+	(rect 456 -24 632 -8)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "h[7..0]" (rect 90 0 121 12)(font "Arial" ))
+	(text "hex[7..0]" (rect 90 0 133 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -102,10 +136,61 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 584 80 640 96))
+	(annotation_block (location)(rect 640 -24 696 -8))
+)
+(pin
+	(output)
+	(rect 456 32 632 48)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "RGB[11..0]" (rect 90 0 145 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 640 32 696 48))
+)
+(pin
+	(output)
+	(rect 456 56 632 72)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "hsync" (rect 90 0 120 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 640 56 696 72))
+)
+(pin
+	(output)
+	(rect 456 80 632 96)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "vsync" (rect 90 0 121 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 640 80 696 96))
 )
 (symbol
-	(rect 160 112 192 128)
+	(rect 208 144 240 160)
 	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
 	(text "vcc" (rect 3 5 21 17)(font "Arial" )(invisible))
 	(port
@@ -120,7 +205,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 200 136 232 168)
+	(rect 248 168 280 200)
 	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
 	(text "gnd" (rect 3 21 20 33)(font "Arial" )(invisible))
 	(port
@@ -137,7 +222,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 320 240 368 272)
+	(rect 272 -24 320 8)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst3" (rect 3 21 26 33)(font "Arial" ))
 	(port
@@ -162,7 +247,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 224 24 272 56)
+	(rect 272 -56 320 -24)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst4" (rect 3 21 26 33)(font "Arial" ))
 	(port
@@ -187,53 +272,52 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 40 128)
-	(pt 128 128)
-)
-(connector
-	(pt 40 160)
-	(pt 144 160)
+	(text "notx[9..0]" (rect 328 -56 375 -44)(font "Arial" ))
+	(pt 320 -40)
+	(pt 368 -40)
 	(bus)
 )
 (connector
-	(text "1" (rect 160 139 172 144)(font "Arial" )(vertical))
+	(text "btn[2..0]" (rect 334 -24 375 -12)(font "Arial" ))
+	(pt 368 -8)
+	(pt 320 -8)
+	(bus)
+)
+(connector
+	(pt 88 160)
 	(pt 176 160)
-	(pt 176 128)
 )
 (connector
-	(pt 88 112)
-	(pt 40 112)
-)
-(connector
-	(pt 112 144)
-	(pt 40 144)
+	(pt 88 192)
+	(pt 192 192)
 	(bus)
 )
 (connector
-	(text "0" (rect 200 123 212 128)(font "Arial" )(vertical))
-	(pt 216 120)
-	(pt 216 136)
+	(pt 136 144)
+	(pt 88 144)
 )
 (connector
-	(text "btn[2..0]" (rect 382 240 423 252)(font "Arial" ))
-	(pt 368 256)
-	(pt 408 256)
+	(pt 160 176)
+	(pt 88 176)
 	(bus)
 )
 (connector
-	(text "notbtn[2..0]" (rect 265 240 321 252)(font "Arial" ))
-	(pt 208 256)
-	(pt 320 256)
+	(text "1" (rect 208 171 220 176)(font "Arial" )(vertical))
+	(pt 224 160)
+	(pt 224 192)
+)
+(connector
+	(text "0" (rect 248 155 260 160)(font "Arial" )(vertical))
+	(pt 264 152)
+	(pt 264 168)
+)
+(connector
+	(pt 256 -8)
+	(pt 272 -8)
 	(bus)
 )
 (connector
-	(pt 208 40)
-	(pt 224 40)
-	(bus)
-)
-(connector
-	(text "notx[9..0]" (rect 280 24 327 36)(font "Arial" ))
-	(pt 272 40)
-	(pt 320 40)
+	(pt 256 -40)
+	(pt 272 -40)
 	(bus)
 )
