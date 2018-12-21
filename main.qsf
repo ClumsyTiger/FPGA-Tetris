@@ -106,8 +106,8 @@ set_location_assignment PIN_K21 -to RGB[1]
 set_location_assignment PIN_K22 -to RGB[0]
 set_location_assignment PIN_P21 -to Bin_PS2
 set_location_assignment PIN_P22 -to clk_PS2
-set_global_assignment -name BDF_FILE !playground/main_1.bdf
-set_global_assignment -name BDF_FILE !playground/main_2.bdf
+set_global_assignment -name BDF_FILE !modules/Mare/random.bdf
+set_global_assignment -name BDF_FILE !modules/test_modules.bdf
 set_global_assignment -name VHDL_FILE !components/arithmetic/CONST.vhd
 set_global_assignment -name VHDL_FILE !components/arithmetic/ADD.vhd
 set_global_assignment -name VHDL_FILE !components/arithmetic/SUB.vhd
@@ -130,7 +130,7 @@ set_global_assignment -name VHDL_FILE !components/signal/CLK_DIVIDER.vhd
 set_global_assignment -name VHDL_FILE !components/signal/PWM.vhd
 set_global_assignment -name VHDL_FILE !components/signal/DEBOUNCE.vhd
 set_global_assignment -name VHDL_FILE !components/signal/RF_EDGE.vhd
-set_global_assignment -name BDF_FILE !components/test.bdf
+set_global_assignment -name BDF_FILE !components/test_components.bdf
 set_global_assignment -name BDF_FILE main.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top

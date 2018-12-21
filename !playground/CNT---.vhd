@@ -7,30 +7,36 @@ entity CNT is
 
 	generic
 	(
-		wid       : natural   := 10;    --wid mora da bude vece od log2(top_val)!!!!!!
-		top_val   : natural   :=  9;
-	   bot_val   : natural   :=  0;
+		wid   : natural   := 10;    --wid mora da bude vece od log2(top)!!!!!!
+		top   : natural   :=  9;
+	   bot   : natural   :=  0;
 		
-		dir_val   : std_logic := '0';   -- '0':   inkrementira se   [bot .. top]   (ukljucujuci! i top: 0 1 2 3 4 5 6 7 8 9)
-		                                -- '1':   dekrementira se   [top .. bot]   (ukljucujuci! i bot: 9 8 7 6 5 4 3 2 1 0)
-		looop_val : std_logic := '0'    -- '0':   zaustavi se brojanje
-		                                -- '1':   nastavi  se brojanje ciklicno (ponovo od pocetka)
+		incs  : std_logic := '1';   -- '0':   inkrementira se   [bot .. top]   (ukljucujuci! i top: 0 1 2 3 4 5 6 7 8 9)
+		                            -- '1':   dekrementira se   [top .. bot]   (ukljucujuci! i bot: 9 8 7 6 5 4 3 2 1 0)
+		loops : std_logic := '1'    -- '0':   zaustavi  se brojanje kad se dodje do kraja
+		                            -- '1':   nastavlja se brojanje ciklicno
 	);
 
 	port 
 	(
-		Ntop	  : in  std_logic_vector(wid-1 downto 0) := std_logic_vector(to_unsigned(top_val, wid));
-		Nbot	  : in  std_logic_vector(wid-1 downto 0) := std_logic_vector(to_unsigned(bot_val, wid));
-		dir     : in  std_logic := '0';
-		looop   : in  std_logic := '0';
-		Jcurr	  : out std_logic_vector(wid-1 downto 0);
-		cyc_end : out std_logic;
+		ldtop	   : in  std_logic_vector(wid-1 downto 0) := std_logic;
+		intop	   : in  std_logic_vector(wid-1 downto 0) := std_logic_vector(to_unsigned(top, wid));
+		ldbot	   : in  std_logic_vector(wid-1 downto 0) := std_logic;
+		inbot	   : in  std_logic_vector(wid-1 downto 0) := std_logic_vector(to_unsigned(bot, wid));
+		
+		ldincs	: in  std_logic_vector(wid-1 downto 0) := std_logic;
+		inincs	: in  std_logic_vector(wid-1 downto 0) := std_logic;
+		ldloops	: in  std_logic_vector(wid-1 downto 0) := std_logic;
+		inloops	: in  std_logic_vector(wid-1 downto 0) := std_logic;
 
-		--ako nista nije ukljuceno, onda se inkrementira/dekrementira brojac
-		ld	   : in  std_logic := '0';   --ako se pozove ld onda se obavezno i resetuje brojac!!!!!!
-		rs	   : in  std_logic := '0';   --reset to either top_val or bot_val
+		Icurr    : out std_logic_vector(wid-1 downto 0);
+		isbeg    : out std_logic;
+		isend    : out std_logic;
 
-		clk	: in  std_logic
+		clk	   : in  std_logic;
+
+		reset	   : in  std_logic := '0';   --resetuje brojac na pocetnu vrednost
+		pause    : in  std_logic := '0'    --pauzira brojanje
 	);
 
 end entity;
@@ -51,10 +57,10 @@ end entity;
 
 
 architecture rtl of CNT is
-	signal data, data_next : std_logic_vector(wid-1 downto 0) := std_logic_vector(to_unsigned( top_val when dir = '0' else bot_val, wid ));   ---------------------------------------
+	signal data, data_next : std_logic_vector(wid-1 downto 0) := std_logic_vector(to_unsigned( top when incs = '1' else bot, wid ));
 begin
 
-	Jcurr <= data;
+	Icurr <= data;
 
 	process (clk)
 	begin
@@ -63,12 +69,18 @@ begin
 		end if;
 	end process;
 
-	process (ld, rs, Ntop, Nbot, cyc_end)
+	process (ldtop, ldbot, ldincs, ldloops, intop, inbot, inincs, inloops)
 	begin
 		
-		if    rs  then 
-		elsif ld  then 
-		end if;
+		if ldtop   then top   = intop    end if;
+		if ldbot   then bot   = inbot    end if;
+		if ldincs  then incs  = inincs   end if;
+		if ldloops then loops = inloops  end if;
+
+	end process;
+	
+	process (top, bot, incs, loops, Icurr, isbeg, isend, reset, pause)
+	begin
 		
 	end process;
 

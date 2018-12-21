@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect -304 -104 -136 -88)
+	(rect -304 -88 -136 -72)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "clk" (rect 5 0 19 12)(font "Arial" ))
 	(pt 168 8)
@@ -34,13 +34,13 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "GND" (rect 128 7 149 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect -368 -104 -312 -88))
+	(annotation_block (location)(rect -368 -88 -312 -72))
 )
 (pin
 	(input)
-	(rect -304 -144 -136 -128)
+	(rect -304 -136 -136 -120)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "next" (rect 5 0 27 12)(font "Arial" ))
+	(text "next" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -55,7 +55,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect -48 -144 128 -128)
+	(rect -48 -136 128 -120)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "rand[31..0]" (rect 90 0 143 12)(font "Arial" ))
 	(pt 0 8)
@@ -70,7 +70,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect -176 -64 -144 -48)
+	(rect -176 -48 -144 -32)
 	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
 	(text "inst5" (rect 3 5 26 17)(font "Arial" )(invisible))
 	(port
@@ -85,7 +85,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect -136 -40 -104 -8)
+	(rect -136 -24 -104 8)
 	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
 	(text "inst6" (rect 3 21 26 33)(font "Arial" )(invisible))
 	(port
@@ -102,30 +102,30 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt -304 -64)
-	(pt -256 -64)
-)
-(connector
 	(pt -304 -48)
-	(pt -240 -48)
+	(pt -256 -48)
 )
 (connector
 	(pt -304 -32)
-	(pt -224 -32)
-	(bus)
+	(pt -240 -32)
 )
 (connector
 	(pt -304 -16)
-	(pt -200 -16)
+	(pt -224 -16)
 	(bus)
 )
 (connector
-	(text "0" (rect -137 -62 -125 -57)(font "Arial" )(vertical))
-	(pt -120 -64)
-	(pt -120 -40)
+	(pt -304 0)
+	(pt -200 0)
+	(bus)
 )
 (connector
-	(text "1" (rect -176 -29 -164 -24)(font "Arial" )(vertical))
-	(pt -160 -48)
-	(pt -160 -16)
+	(text "1" (rect -176 -13 -164 -8)(font "Arial" )(vertical))
+	(pt -160 -32)
+	(pt -160 0)
+)
+(connector
+	(text "0" (rect -137 -46 -125 -41)(font "Arial" )(vertical))
+	(pt -120 -48)
+	(pt -120 -24)
 )
