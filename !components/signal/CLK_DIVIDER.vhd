@@ -7,15 +7,15 @@ entity CLK_DIVIDER is
 	generic
 	(
 		clk_freq_MHz  : natural := 50;
-		T_out_ms      : natural := 100
+		T_out_ms      : natural := 1000
 	);
 
 	port
 	(
 		in_clk	: in  std_logic;   --      -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 		out_clk	: out std_logic;   --      ------______------______------______   out_clk nize frekvencije od in_clk
-		reset	  	: in  std_logic := '0';
-		pause		: in  std_logic := '0'
+		pause		: in  std_logic := '0';
+		reset	  	: in  std_logic := '0'
 	);
 
 end entity;

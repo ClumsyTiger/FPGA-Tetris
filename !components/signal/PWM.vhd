@@ -7,15 +7,15 @@ entity PWM is
 	generic
 	(
 		clk_freq_MHz  : natural := 50;
-		T_out_ms      : natural := 100
+		T_out_ms      : natural := 1000
 	);
 
 	port
 	(
 		in_clk	: in  std_logic;   --      -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 		pulse		: out std_logic;   --      -___________-___________-___________   pulse iste frekvencije kao i in_clk, ali vecinu vremena je 0
-		reset	  	: in  std_logic := '0';
-		pause		: in  std_logic := '0'
+		pause		: in  std_logic := '0';
+		reset	  	: in  std_logic := '0'
 	);
 
 end entity;

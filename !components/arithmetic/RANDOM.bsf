@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "symbol" (version "1.2"))
 (symbol
 	(rect 64 64 208 192)
-	(text "random" (rect 5 0 47 14)(font "Arial" (font_size 8)))
+	(text "RANDOM" (rect 5 0 47 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 112 25 124)(font "Arial" ))
 	(port
 		(pt 0 32)

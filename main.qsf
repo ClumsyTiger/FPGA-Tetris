@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C16F484C6
-set_global_assignment -name TOP_LEVEL_ENTITY main
+set_global_assignment -name TOP_LEVEL_ENTITY test_components
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:30:17  NOVEMBER 12, 2018"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -59,29 +59,29 @@ set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
 set_location_assignment PIN_G21 -to clk
-set_location_assignment PIN_D2 -to x[9]
-set_location_assignment PIN_E4 -to x[8]
-set_location_assignment PIN_E3 -to x[7]
-set_location_assignment PIN_H7 -to x[6]
-set_location_assignment PIN_J7 -to x[5]
-set_location_assignment PIN_G5 -to x[4]
-set_location_assignment PIN_G4 -to x[3]
-set_location_assignment PIN_H6 -to x[2]
-set_location_assignment PIN_H5 -to x[1]
-set_location_assignment PIN_J6 -to x[0]
+set_location_assignment PIN_D2 -to sw[9]
+set_location_assignment PIN_E4 -to sw[8]
+set_location_assignment PIN_E3 -to sw[7]
+set_location_assignment PIN_H7 -to sw[6]
+set_location_assignment PIN_J7 -to sw[5]
+set_location_assignment PIN_G5 -to sw[4]
+set_location_assignment PIN_G4 -to sw[3]
+set_location_assignment PIN_H6 -to sw[2]
+set_location_assignment PIN_H5 -to sw[1]
+set_location_assignment PIN_J6 -to sw[0]
 set_location_assignment PIN_F1 -to notbtn[2]
 set_location_assignment PIN_G3 -to notbtn[1]
 set_location_assignment PIN_H2 -to notbtn[0]
-set_location_assignment PIN_B1 -to z[9]
-set_location_assignment PIN_B2 -to z[8]
-set_location_assignment PIN_C2 -to z[7]
-set_location_assignment PIN_C1 -to z[6]
-set_location_assignment PIN_E1 -to z[5]
-set_location_assignment PIN_F2 -to z[4]
-set_location_assignment PIN_H1 -to z[3]
-set_location_assignment PIN_J3 -to z[2]
-set_location_assignment PIN_J2 -to z[1]
-set_location_assignment PIN_J1 -to z[0]
+set_location_assignment PIN_B1 -to led[9]
+set_location_assignment PIN_B2 -to led[8]
+set_location_assignment PIN_C2 -to led[7]
+set_location_assignment PIN_C1 -to led[6]
+set_location_assignment PIN_E1 -to led[5]
+set_location_assignment PIN_F2 -to led[4]
+set_location_assignment PIN_H1 -to led[3]
+set_location_assignment PIN_J3 -to led[2]
+set_location_assignment PIN_J2 -to led[1]
+set_location_assignment PIN_J1 -to led[0]
 set_location_assignment PIN_E11 -to hex[7]
 set_location_assignment PIN_F11 -to hex[6]
 set_location_assignment PIN_H12 -to hex[5]
@@ -106,9 +106,9 @@ set_location_assignment PIN_K21 -to RGB[1]
 set_location_assignment PIN_K22 -to RGB[0]
 set_location_assignment PIN_P21 -to Bin_PS2
 set_location_assignment PIN_P22 -to clk_PS2
-set_global_assignment -name BDF_FILE !modules/Mare/random.bdf
 set_global_assignment -name BDF_FILE !modules/test_modules.bdf
 set_global_assignment -name VHDL_FILE !components/arithmetic/CONST.vhd
+set_global_assignment -name BDF_FILE !components/arithmetic/RANDOM.bdf
 set_global_assignment -name VHDL_FILE !components/arithmetic/ADD.vhd
 set_global_assignment -name VHDL_FILE !components/arithmetic/SUB.vhd
 set_global_assignment -name VHDL_FILE !components/arithmetic/CMP.vhd
