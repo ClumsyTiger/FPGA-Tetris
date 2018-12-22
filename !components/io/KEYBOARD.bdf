@@ -51,7 +51,7 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "GND" (rect 128 7 149 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect -368 -144 -312 -128))
+	(annotation_block (location)(rect -376 -304 -320 -288))
 )
 (pin
 	(input)
@@ -68,7 +68,7 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "GND" (rect 128 7 149 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect -368 -112 -312 -96))
+	(annotation_block (location)(rect -376 -272 -320 -256))
 )
 (pin
 	(output)
