@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C16F484C6
-set_global_assignment -name TOP_LEVEL_ENTITY cols
+set_global_assignment -name TOP_LEVEL_ENTITY col
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:30:17  NOVEMBER 12, 2018"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -106,11 +106,7 @@ set_location_assignment PIN_K21 -to RGB[1]
 set_location_assignment PIN_K22 -to RGB[0]
 set_location_assignment PIN_P21 -to Bin_PS2
 set_location_assignment PIN_P22 -to clk_PS2
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name BDF_FILE !modules/mem4x4.bdf
+set_global_assignment -name BDF_FILE !modules/col.bdf
 set_global_assignment -name BDF_FILE !modules/tiles.bdf
 set_global_assignment -name BDF_FILE !modules/test_modules.bdf
 set_global_assignment -name VHDL_FILE !components/arithmetic/CONST.vhd
@@ -126,9 +122,9 @@ set_global_assignment -name VHDL_FILE !components/flow/DC8.vhd
 set_global_assignment -name VHDL_FILE !components/flow/CD2.vhd
 set_global_assignment -name VHDL_FILE !components/flow/CD4.vhd
 set_global_assignment -name VHDL_FILE !components/flow/CD8.vhd
-set_global_assignment -name VHDL_FILE !components/flow/MP2.vhd
-set_global_assignment -name VHDL_FILE !components/flow/MP4.vhd
-set_global_assignment -name VHDL_FILE !components/flow/MP8.vhd
+set_global_assignment -name VHDL_FILE !components/flow/MX2.vhd
+set_global_assignment -name VHDL_FILE !components/flow/MX4.vhd
+set_global_assignment -name VHDL_FILE !components/flow/MX8.vhd
 set_global_assignment -name VHDL_FILE !components/io/SEVEN_SEG.vhd
 set_global_assignment -name BDF_FILE !components/io/DISPLAY.bdf
 set_global_assignment -name BDF_FILE !components/io/KEYBOARD.bdf
@@ -140,3 +136,7 @@ set_global_assignment -name VHDL_FILE !components/signal/DEBOUNCE.vhd
 set_global_assignment -name VHDL_FILE !components/signal/RF_EDGE.vhd
 set_global_assignment -name BDF_FILE !components/test_components.bdf
 set_global_assignment -name BDF_FILE main.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

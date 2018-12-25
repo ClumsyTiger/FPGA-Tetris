@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 use ieee.numeric_std.all;
 
-entity MP4 is
+entity MX4 is
 	
 	generic
 	(
@@ -33,7 +33,7 @@ end entity;
 --    CASE corresponds to WITH
 -- =============================================================================
 
-architecture rtl of MP4 is   --register transfer level
+architecture rtl of MX4 is   --register transfer level
 begin
 
 	Y <= (others => '0') when not en = '1' else

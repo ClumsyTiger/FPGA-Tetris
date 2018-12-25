@@ -57,11 +57,6 @@ applicable agreement for further details.
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
-		"A"
-		"0"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
 		"B"
 		"0"
 		""

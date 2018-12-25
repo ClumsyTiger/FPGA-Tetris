@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "symbol" (version "1.2"))
 (symbol
 	(rect 64 64 184 272)
-	(text "MP8" (rect 5 0 26 12)(font "Arial" ))
+	(text "MX8" (rect 5 0 26 12)(font "Arial" ))
 	(text "inst" (rect 8 192 25 204)(font "Arial" ))
 	(port
 		(pt 0 32)
@@ -106,7 +106,7 @@ applicable agreement for further details.
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
-		(text "MP8" (rect 48 96 79 112)(font "Arial" (color 0 0 0)(font_size 10)(bold)))
+		(text "MX8" (rect 48 96 79 112)(font "Arial" (color 0 0 0)(font_size 10)(bold)))
 		(rectangle (rect 16 16 104 192))
 	)
 	(annotation_block (parameter)(rect 176 32 360 64))

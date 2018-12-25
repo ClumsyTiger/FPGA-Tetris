@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 use ieee.numeric_std.all;
 
-entity MP8 is
+entity MX8 is
 	
 	generic
 	(
@@ -37,7 +37,7 @@ end entity;
 --    CASE corresponds to WITH
 -- =============================================================================
 
-architecture rtl of MP8 is   --register transfer level
+architecture rtl of MX8 is   --register transfer level
 begin
 
 	Y <= (others => '0') when not en = '1' else

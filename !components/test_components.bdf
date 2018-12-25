@@ -628,212 +628,6 @@ applicable agreement for further details.
 	(annotation_block (parameter)(rect 272 880 456 928))
 )
 (symbol
-	(rect 600 304 720 448)
-	(text "MP4" (rect 5 0 26 12)(font "Arial" ))
-	(text "inst8" (rect 8 128 31 140)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "X0[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
-		(text "X0[]" (rect 21 27 39 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "X1[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
-		(text "X1[]" (rect 21 43 39 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "X2[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
-		(text "X2[]" (rect 21 59 39 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64)(line_width 3))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "X3[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
-		(text "X3[]" (rect 21 75 39 87)(font "Arial" ))
-		(line (pt 0 80)(pt 16 80)(line_width 3))
-	)
-	(port
-		(pt 0 96)
-		(input)
-		(text "en" (rect 0 0 11 12)(font "Arial" ))
-		(text "en" (rect 21 91 32 103)(font "Arial" ))
-		(line (pt 0 96)(pt 16 96))
-	)
-	(port
-		(pt 0 112)
-		(input)
-		(text "S[1..0]" (rect 0 0 33 12)(font "Arial" ))
-		(text "S[1..0]" (rect 21 107 54 119)(font "Arial" ))
-		(line (pt 0 112)(pt 16 112)(line_width 3))
-	)
-	(port
-		(pt 120 32)
-		(output)
-		(text "Y[wid-1..0]" (rect -64 0 -11 12)(font "Arial" ))
-		(text "Y[]" (rect 87 27 102 39)(font "Arial" ))
-		(line (pt 120 32)(pt 104 32)(line_width 3))
-	)
-	(parameter
-		"wid"
-		"10"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(drawing
-		(text "MP4" (rect 48 64 79 80)(font "Arial" (color 0 0 0)(font_size 10)(bold)))
-		(rectangle (rect 16 16 104 128))
-	)
-	(annotation_block (parameter)(rect 720 272 904 304))
-)
-(symbol
-	(rect 600 168 720 280)
-	(text "MP2" (rect 5 0 26 12)(font "Arial" ))
-	(text "inst9" (rect 8 96 31 108)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "X0[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
-		(text "X0[]" (rect 21 27 39 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "X1[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
-		(text "X1[]" (rect 21 43 39 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "en" (rect 0 0 11 12)(font "Arial" ))
-		(text "en" (rect 21 59 32 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "S[0..0]" (rect 0 0 33 12)(font "Arial" ))
-		(text "S[0..0]" (rect 21 75 54 87)(font "Arial" ))
-		(line (pt 0 80)(pt 16 80)(line_width 3))
-	)
-	(port
-		(pt 120 32)
-		(output)
-		(text "Y[wid-1..0]" (rect -64 0 -11 12)(font "Arial" ))
-		(text "Y[]" (rect 87 27 102 39)(font "Arial" ))
-		(line (pt 120 32)(pt 104 32)(line_width 3))
-	)
-	(parameter
-		"wid"
-		"10"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(drawing
-		(text "MP2" (rect 48 48 79 64)(font "Arial" (color 0 0 0)(font_size 10)(bold)))
-		(rectangle (rect 16 16 104 96))
-	)
-	(annotation_block (parameter)(rect 720 136 904 168))
-)
-(symbol
-	(rect 600 472 720 680)
-	(text "MP8" (rect 5 0 26 12)(font "Arial" ))
-	(text "inst10" (rect 8 192 37 204)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "X0[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
-		(text "X0[]" (rect 21 27 39 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "X1[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
-		(text "X1[]" (rect 21 43 39 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "X2[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
-		(text "X2[]" (rect 21 59 39 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64)(line_width 3))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "X3[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
-		(text "X3[]" (rect 21 75 39 87)(font "Arial" ))
-		(line (pt 0 80)(pt 16 80)(line_width 3))
-	)
-	(port
-		(pt 0 96)
-		(input)
-		(text "X4[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
-		(text "X4[]" (rect 21 91 39 103)(font "Arial" ))
-		(line (pt 0 96)(pt 16 96)(line_width 3))
-	)
-	(port
-		(pt 0 112)
-		(input)
-		(text "X5[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
-		(text "X5[]" (rect 21 107 39 119)(font "Arial" ))
-		(line (pt 0 112)(pt 16 112)(line_width 3))
-	)
-	(port
-		(pt 0 128)
-		(input)
-		(text "X6[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
-		(text "X6[]" (rect 21 123 39 135)(font "Arial" ))
-		(line (pt 0 128)(pt 16 128)(line_width 3))
-	)
-	(port
-		(pt 0 144)
-		(input)
-		(text "X7[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
-		(text "X7[]" (rect 21 139 39 151)(font "Arial" ))
-		(line (pt 0 144)(pt 16 144)(line_width 3))
-	)
-	(port
-		(pt 0 160)
-		(input)
-		(text "en" (rect 0 0 11 12)(font "Arial" ))
-		(text "en" (rect 21 155 32 167)(font "Arial" ))
-		(line (pt 0 160)(pt 16 160))
-	)
-	(port
-		(pt 0 176)
-		(input)
-		(text "S[2..0]" (rect 0 0 33 12)(font "Arial" ))
-		(text "S[2..0]" (rect 21 171 54 183)(font "Arial" ))
-		(line (pt 0 176)(pt 16 176)(line_width 3))
-	)
-	(port
-		(pt 120 32)
-		(output)
-		(text "Y[wid-1..0]" (rect -64 0 -11 12)(font "Arial" ))
-		(text "Y[]" (rect 87 27 102 39)(font "Arial" ))
-		(line (pt 120 32)(pt 104 32)(line_width 3))
-	)
-	(parameter
-		"wid"
-		"10"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(drawing
-		(text "MP8" (rect 48 96 79 112)(font "Arial" (color 0 0 0)(font_size 10)(bold)))
-		(rectangle (rect 16 16 104 192))
-	)
-	(annotation_block (parameter)(rect 720 440 904 472))
-)
-(symbol
 	(rect 1976 464 2024 496)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst2" (rect 3 21 26 33)(font "Arial" ))
@@ -1157,70 +951,6 @@ applicable agreement for further details.
 		(line (pt 64 72)(pt 64 64)(color 0 0 0)(line_width 3))
 		(rectangle (rect 16 16 120 88))
 	)
-)
-(symbol
-	(rect 408 1072 528 1216)
-	(text "MP4" (rect 5 0 26 12)(font "Arial" ))
-	(text "inst19" (rect 8 128 37 140)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "X0[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
-		(text "X0[]" (rect 21 27 39 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "X1[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
-		(text "X1[]" (rect 21 43 39 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "X2[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
-		(text "X2[]" (rect 21 59 39 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64)(line_width 3))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "X3[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
-		(text "X3[]" (rect 21 75 39 87)(font "Arial" ))
-		(line (pt 0 80)(pt 16 80)(line_width 3))
-	)
-	(port
-		(pt 0 96)
-		(input)
-		(text "en" (rect 0 0 11 12)(font "Arial" ))
-		(text "en" (rect 21 91 32 103)(font "Arial" ))
-		(line (pt 0 96)(pt 16 96))
-	)
-	(port
-		(pt 0 112)
-		(input)
-		(text "S[1..0]" (rect 0 0 33 12)(font "Arial" ))
-		(text "S[1..0]" (rect 21 107 54 119)(font "Arial" ))
-		(line (pt 0 112)(pt 16 112)(line_width 3))
-	)
-	(port
-		(pt 120 32)
-		(output)
-		(text "Y[wid-1..0]" (rect -64 0 -11 12)(font "Arial" ))
-		(text "Y[]" (rect 87 27 102 39)(font "Arial" ))
-		(line (pt 120 32)(pt 104 32)(line_width 3))
-	)
-	(parameter
-		"wid"
-		"10"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(drawing
-		(text "MP4" (rect 48 64 79 80)(font "Arial" (color 0 0 0)(font_size 10)(bold)))
-		(rectangle (rect 16 16 104 128))
-	)
-	(annotation_block (parameter)(rect 216 1192 400 1224))
 )
 (symbol
 	(rect 88 1072 232 1200)
@@ -1726,56 +1456,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1224 1096 1344 1208)
-	(text "MP2" (rect 5 0 26 12)(font "Arial" ))
-	(text "inst" (rect 8 96 25 108)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "X0[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
-		(text "X0[]" (rect 21 27 39 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "X1[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
-		(text "X1[]" (rect 21 43 39 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "en" (rect 0 0 11 12)(font "Arial" ))
-		(text "en" (rect 21 59 32 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "S[0..0]" (rect 0 0 33 12)(font "Arial" ))
-		(text "S[0..0]" (rect 21 75 54 87)(font "Arial" ))
-		(line (pt 0 80)(pt 16 80)(line_width 3))
-	)
-	(port
-		(pt 120 32)
-		(output)
-		(text "Y[wid-1..0]" (rect -64 0 -11 12)(font "Arial" ))
-		(text "Y[]" (rect 87 27 102 39)(font "Arial" ))
-		(line (pt 120 32)(pt 104 32)(line_width 3))
-	)
-	(parameter
-		"wid"
-		"12"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(drawing
-		(text "MP2" (rect 48 48 79 64)(font "Arial" (color 0 0 0)(font_size 10)(bold)))
-		(rectangle (rect 16 16 104 96))
-	)
-	(annotation_block (parameter)(rect 1032 1184 1216 1216))
-)
-(symbol
 	(rect 112 808 272 896)
 	(text "CMPI" (rect 5 0 32 12)(font "Arial" ))
 	(text "inst28" (rect 8 72 37 84)(font "Arial" ))
@@ -1898,6 +1578,326 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 128 112))
 	)
 	(annotation_block (parameter)(rect 1600 400 1784 448))
+)
+(symbol
+	(rect 600 168 720 280)
+	(text "MX2" (rect 5 0 25 12)(font "Arial" ))
+	(text "inst17" (rect 8 96 37 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "X0[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "X0[]" (rect 21 27 39 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "X1[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "X1[]" (rect 21 43 39 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "en" (rect 0 0 11 12)(font "Arial" ))
+		(text "en" (rect 21 59 32 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "S[0..0]" (rect 0 0 33 12)(font "Arial" ))
+		(text "S[0..0]" (rect 21 75 54 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 120 32)
+		(output)
+		(text "Y[wid-1..0]" (rect -64 0 -11 12)(font "Arial" ))
+		(text "Y[]" (rect 87 27 102 39)(font "Arial" ))
+		(line (pt 120 32)(pt 104 32)(line_width 3))
+	)
+	(parameter
+		"wid"
+		"10"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(text "MX2" (rect 48 48 79 64)(font "Arial" (color 0 0 0)(font_size 10)(bold)))
+		(rectangle (rect 16 16 104 96))
+	)
+	(annotation_block (parameter)(rect 720 136 904 168))
+)
+(symbol
+	(rect 600 304 720 448)
+	(text "MX4" (rect 5 0 25 12)(font "Arial" ))
+	(text "inst18" (rect 8 128 37 140)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "X0[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "X0[]" (rect 21 27 39 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "X1[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "X1[]" (rect 21 43 39 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "X2[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "X2[]" (rect 21 59 39 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "X3[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "X3[]" (rect 21 75 39 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "en" (rect 0 0 11 12)(font "Arial" ))
+		(text "en" (rect 21 91 32 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "S[1..0]" (rect 0 0 33 12)(font "Arial" ))
+		(text "S[1..0]" (rect 21 107 54 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 120 32)
+		(output)
+		(text "Y[wid-1..0]" (rect -64 0 -11 12)(font "Arial" ))
+		(text "Y[]" (rect 87 27 102 39)(font "Arial" ))
+		(line (pt 120 32)(pt 104 32)(line_width 3))
+	)
+	(parameter
+		"wid"
+		"10"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(text "MX4" (rect 48 64 79 80)(font "Arial" (color 0 0 0)(font_size 10)(bold)))
+		(rectangle (rect 16 16 104 128))
+	)
+	(annotation_block (parameter)(rect 720 272 904 304))
+)
+(symbol
+	(rect 600 472 720 680)
+	(text "MX8" (rect 5 0 25 12)(font "Arial" ))
+	(text "inst22" (rect 8 192 37 204)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "X0[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "X0[]" (rect 21 27 39 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "X1[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "X1[]" (rect 21 43 39 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "X2[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "X2[]" (rect 21 59 39 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "X3[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "X3[]" (rect 21 75 39 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "X4[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "X4[]" (rect 21 91 39 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "X5[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "X5[]" (rect 21 107 39 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "X6[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "X6[]" (rect 21 123 39 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "X7[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "X7[]" (rect 21 139 39 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "en" (rect 0 0 11 12)(font "Arial" ))
+		(text "en" (rect 21 155 32 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "S[2..0]" (rect 0 0 33 12)(font "Arial" ))
+		(text "S[2..0]" (rect 21 171 54 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
+		(pt 120 32)
+		(output)
+		(text "Y[wid-1..0]" (rect -64 0 -11 12)(font "Arial" ))
+		(text "Y[]" (rect 87 27 102 39)(font "Arial" ))
+		(line (pt 120 32)(pt 104 32)(line_width 3))
+	)
+	(parameter
+		"wid"
+		"10"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(text "MX8" (rect 48 96 79 112)(font "Arial" (color 0 0 0)(font_size 10)(bold)))
+		(rectangle (rect 16 16 104 192))
+	)
+	(annotation_block (parameter)(rect 720 440 904 472))
+)
+(symbol
+	(rect 1224 1096 1344 1208)
+	(text "MX2" (rect 5 0 25 12)(font "Arial" ))
+	(text "inst29" (rect 8 96 37 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "X0[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "X0[]" (rect 21 27 39 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "X1[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "X1[]" (rect 21 43 39 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "en" (rect 0 0 11 12)(font "Arial" ))
+		(text "en" (rect 21 59 32 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "S[0..0]" (rect 0 0 33 12)(font "Arial" ))
+		(text "S[0..0]" (rect 21 75 54 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 120 32)
+		(output)
+		(text "Y[wid-1..0]" (rect -64 0 -11 12)(font "Arial" ))
+		(text "Y[]" (rect 87 27 102 39)(font "Arial" ))
+		(line (pt 120 32)(pt 104 32)(line_width 3))
+	)
+	(parameter
+		"wid"
+		"12"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(text "MX2" (rect 48 48 79 64)(font "Arial" (color 0 0 0)(font_size 10)(bold)))
+		(rectangle (rect 16 16 104 96))
+	)
+	(annotation_block (parameter)(rect 1032 1184 1216 1216))
+)
+(symbol
+	(rect 408 1072 528 1216)
+	(text "MX4" (rect 5 0 25 12)(font "Arial" ))
+	(text "inst" (rect 8 128 25 140)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "X0[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "X0[]" (rect 21 27 39 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "X1[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "X1[]" (rect 21 43 39 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "X2[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "X2[]" (rect 21 59 39 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "X3[wid-1..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "X3[]" (rect 21 75 39 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "en" (rect 0 0 11 12)(font "Arial" ))
+		(text "en" (rect 21 91 32 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "S[1..0]" (rect 0 0 33 12)(font "Arial" ))
+		(text "S[1..0]" (rect 21 107 54 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 120 32)
+		(output)
+		(text "Y[wid-1..0]" (rect -64 0 -11 12)(font "Arial" ))
+		(text "Y[]" (rect 87 27 102 39)(font "Arial" ))
+		(line (pt 120 32)(pt 104 32)(line_width 3))
+	)
+	(parameter
+		"wid"
+		"10"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(text "MX4" (rect 48 64 79 80)(font "Arial" (color 0 0 0)(font_size 10)(bold)))
+		(rectangle (rect 16 16 104 128))
+	)
+	(annotation_block (parameter)(rect 216 1192 400 1224))
 )
 (connector
 	(text "btn[0]" (rect 1394 216 1422 228)(font "Arial" ))
