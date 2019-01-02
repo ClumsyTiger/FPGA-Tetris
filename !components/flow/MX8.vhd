@@ -45,6 +45,7 @@ begin
 		  X1  when S = "001" else
 		  X2  when S = "010" else
 		  X3  when S = "011" else
+		  
 		  X4  when S = "100" else
 		  X5  when S = "101" else
 		  X6  when S = "110" else

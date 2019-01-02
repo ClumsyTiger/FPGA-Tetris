@@ -413,102 +413,6 @@ applicable agreement for further details.
 	(annotation_block (parameter)(rect 16 216 200 264))
 )
 (symbol
-	(rect 736 280 896 368)
-	(text "CMPB" (rect 5 0 35 12)(font "Arial" ))
-	(text "inst20" (rect 8 72 37 84)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "A[wid-1..0]" (rect 0 0 51 12)(font "Arial" ))
-		(text "A[]" (rect 24 24 38 36)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 160 32)
-		(output)
-		(text "gr" (rect 0 -40 9 -28)(font "Arial" ))
-		(text "A>B" (rect 120 24 140 36)(font "Arial" ))
-		(line (pt 160 32)(pt 144 32))
-	)
-	(port
-		(pt 160 48)
-		(output)
-		(text "eq" (rect 0 -40 11 -28)(font "Arial" ))
-		(text "A=B" (rect 120 40 140 52)(font "Arial" ))
-		(line (pt 160 48)(pt 144 48))
-	)
-	(port
-		(pt 160 64)
-		(output)
-		(text "ls" (rect 0 -40 8 -28)(font "Arial" ))
-		(text "A<B" (rect 120 56 140 68)(font "Arial" ))
-		(line (pt 160 64)(pt 144 64))
-	)
-	(parameter
-		"wid"
-		"11"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"B"
-		"1039"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(drawing
-		(text "CMPB" (rect 64 40 108 56)(font "Arial" (color 0 0 0)(font_size 10)(bold)))
-		(rectangle (rect 16 16 144 72))
-	)
-	(annotation_block (parameter)(rect 544 328 728 376))
-)
-(symbol
-	(rect 1296 272 1456 360)
-	(text "CMPB" (rect 5 0 35 12)(font "Arial" ))
-	(text "inst22" (rect 8 72 37 84)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "A[wid-1..0]" (rect 0 0 51 12)(font "Arial" ))
-		(text "A[]" (rect 24 24 38 36)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 160 32)
-		(output)
-		(text "gr" (rect 0 -40 9 -28)(font "Arial" ))
-		(text "A>B" (rect 120 24 140 36)(font "Arial" ))
-		(line (pt 160 32)(pt 144 32))
-	)
-	(port
-		(pt 160 48)
-		(output)
-		(text "eq" (rect 0 -40 11 -28)(font "Arial" ))
-		(text "A=B" (rect 120 40 140 52)(font "Arial" ))
-		(line (pt 160 48)(pt 144 48))
-	)
-	(port
-		(pt 160 64)
-		(output)
-		(text "ls" (rect 0 -40 8 -28)(font "Arial" ))
-		(text "A<B" (rect 120 56 140 68)(font "Arial" ))
-		(line (pt 160 64)(pt 144 64))
-	)
-	(parameter
-		"wid"
-		"10"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"B"
-		"665"
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
-	(drawing
-		(text "CMPB" (rect 64 40 108 56)(font "Arial" (color 0 0 0)(font_size 10)(bold)))
-		(rectangle (rect 16 16 144 72))
-	)
-	(annotation_block (parameter)(rect 1104 320 1288 368))
-)
-(symbol
 	(rect 1528 296 1592 344)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst33" (rect 3 37 32 49)(font "Arial" ))
@@ -774,6 +678,102 @@ applicable agreement for further details.
 	)
 	(annotation_block (parameter)(rect 1104 432 1286 488))
 )
+(symbol
+	(rect 1296 272 1456 360)
+	(text "CMPB" (rect 5 0 35 12)(font "Arial" ))
+	(text "inst22" (rect 8 72 37 84)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "A[wid-1..0]" (rect 0 0 51 12)(font "Arial" ))
+		(text "A[]" (rect 24 24 38 36)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 160 32)
+		(output)
+		(text "gr" (rect 0 -40 9 -28)(font "Arial" ))
+		(text "A>B" (rect 120 24 140 36)(font "Arial" ))
+		(line (pt 160 32)(pt 144 32))
+	)
+	(port
+		(pt 160 48)
+		(output)
+		(text "eq" (rect 0 -40 11 -28)(font "Arial" ))
+		(text "A=B" (rect 120 40 140 52)(font "Arial" ))
+		(line (pt 160 48)(pt 144 48))
+	)
+	(port
+		(pt 160 64)
+		(output)
+		(text "ls" (rect 0 -40 8 -28)(font "Arial" ))
+		(text "A<B" (rect 120 56 140 68)(font "Arial" ))
+		(line (pt 160 64)(pt 144 64))
+	)
+	(parameter
+		"wid"
+		"10"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"B"
+		"666"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(text "CMPB" (rect 64 40 108 56)(font "Arial" (color 0 0 0)(font_size 10)(bold)))
+		(rectangle (rect 16 16 144 72))
+	)
+	(annotation_block (parameter)(rect 1104 320 1288 368))
+)
+(symbol
+	(rect 736 280 896 368)
+	(text "CMPB" (rect 5 0 35 12)(font "Arial" ))
+	(text "inst20" (rect 8 72 37 84)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "A[wid-1..0]" (rect 0 0 51 12)(font "Arial" ))
+		(text "A[]" (rect 24 24 38 36)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 160 32)
+		(output)
+		(text "gr" (rect 0 -40 9 -28)(font "Arial" ))
+		(text "A>B" (rect 120 24 140 36)(font "Arial" ))
+		(line (pt 160 32)(pt 144 32))
+	)
+	(port
+		(pt 160 48)
+		(output)
+		(text "eq" (rect 0 -40 11 -28)(font "Arial" ))
+		(text "A=B" (rect 120 40 140 52)(font "Arial" ))
+		(line (pt 160 48)(pt 144 48))
+	)
+	(port
+		(pt 160 64)
+		(output)
+		(text "ls" (rect 0 -40 8 -28)(font "Arial" ))
+		(text "A<B" (rect 120 56 140 68)(font "Arial" ))
+		(line (pt 160 64)(pt 144 64))
+	)
+	(parameter
+		"wid"
+		"11"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"B"
+		"1040"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(text "CMPB" (rect 64 40 108 56)(font "Arial" (color 0 0 0)(font_size 10)(bold)))
+		(rectangle (rect 16 16 144 72))
+	)
+	(annotation_block (parameter)(rect 544 328 728 376))
+)
 (connector
 	(text "x[10..0]" (rect 177 288 214 300)(font "Arial" ))
 	(pt 160 304)
@@ -897,18 +897,10 @@ applicable agreement for further details.
 	(pt 1048 648)
 )
 (connector
-	(pt 1472 320)
-	(pt 1472 328)
-)
-(connector
 	(text "outRGB[11..0]" (rect 1390 632 1460 644)(font "Arial" ))
 	(pt 1368 648)
 	(pt 1448 648)
 	(bus)
-)
-(connector
-	(pt 1456 320)
-	(pt 1472 320)
 )
 (connector
 	(text "cly" (rect 1616 304 1631 316)(font "Arial" ))
@@ -925,12 +917,6 @@ applicable agreement for further details.
 	(text "draw" (rect 1272 640 1294 652)(font "Arial" ))
 	(pt 1264 656)
 	(pt 1304 656)
-)
-(connector
-	(text "y[9..0]" (rect 1232 288 1265 300)(font "Arial" ))
-	(pt 1224 304)
-	(pt 1296 304)
-	(bus)
 )
 (connector
 	(text "clx" (rect 1496 296 1510 308)(font "Arial" ))
@@ -963,6 +949,20 @@ applicable agreement for further details.
 	(pt 1296 416)
 	(bus)
 )
+(connector
+	(pt 1472 328)
+	(pt 1472 320)
+)
+(connector
+	(pt 1472 320)
+	(pt 1456 320)
+)
+(connector
+	(text "y[9..0]" (rect 1232 288 1265 300)(font "Arial" ))
+	(pt 1224 304)
+	(pt 1296 304)
+	(bus)
+)
 (text "y in [0 - 665]" (rect 744 80 850 99)(font "Arial" (color 0 0 0)(font_size 12)(bold)))
 (text "x in [0 - 1039]" (rect 744 48 860 67)(font "Arial" (color 0 0 0)(font_size 12)(bold)))
 (text "cly <= (y = 665) and (x = 1039)" (rect 896 80 1155 99)(font "Arial" (color 0 0 0)(font_size 12)(bold)))
@@ -974,3 +974,5 @@ applicable agreement for further details.
 (text "x: [0 - 799]   [855 - 975]   [1039]" (rect 1232 48 1497 67)(font "Arial" (color 0 0 0)(font_size 12)(bold)))
 (text "     drawy      vsync           cly*clx" (rect 1232 144 1504 163)(font "Arial" (color 0 0 0)(font_size 12)(bold)))
 (text "     drawx      hsync           clx" (rect 1232 72 1472 91)(font "Arial" (color 0 0 0)(font_size 12)(bold)))
+(text "ovde je ipak 1040!" (rect 544 272 703 291)(font "Arial" (color 0 0 0)(font_size 12)(bold)))
+(text "ovde je ipak 666!" (rect 1104 272 1252 291)(font "Arial" (color 0 0 0)(font_size 12)(bold)))

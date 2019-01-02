@@ -22,17 +22,17 @@ end entity;
 
 architecture rtl of CLK_DIVIDER is
 	constant maxnum : natural := (T_out_ms * clk_freq_MHz * 1000)/2 - 1;   -- poluperioda;   T_out_ms/1,000 (s) * clk_freq_MHz * 1,000,000 (1/s)
+	
 begin
 
 	process (in_clk)
-		variable cnt : natural range maxnum downto 0 := maxnum;   --broji se od maxnum do 0
+		variable cnt : natural range 0 to maxnum := 0;   --broji se od 0 do maxnum
 		variable out_clk_next: std_logic := '0';
 	begin
-	
 		if (rising_edge(in_clk)) then
 
-			if    reset = '1' then cnt := maxnum;
-			elsif pause = '0' then cnt := cnt - 1;
+			if    reset  = '1' then cnt := 0;
+			elsif pause /= '1' then cnt := cnt + 1;
 			end if;
 			
 			-- izlazni signal menja polaritet na svaku poluperiodu
@@ -42,9 +42,8 @@ begin
 			
 			
 		end if;
-		
 		out_clk <= out_clk_next;
-		
+	
 	end process;
-
+	
 end rtl;
