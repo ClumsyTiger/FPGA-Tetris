@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C16F484C6
-set_global_assignment -name TOP_LEVEL_ENTITY main
+set_global_assignment -name TOP_LEVEL_ENTITY test_modules
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:30:17  NOVEMBER 12, 2018"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -90,8 +90,8 @@ set_location_assignment PIN_G12 -to hex[3]
 set_location_assignment PIN_F12 -to hex[2]
 set_location_assignment PIN_F13 -to hex[1]
 set_location_assignment PIN_D13 -to hex[0]
-set_location_assignment PIN_L21 -to hsync
-set_location_assignment PIN_L22 -to vsync
+set_location_assignment PIN_L22 -to sync[1]
+set_location_assignment PIN_L21 -to sync[0]
 set_location_assignment PIN_H21 -to RGB[11]
 set_location_assignment PIN_H20 -to RGB[10]
 set_location_assignment PIN_H17 -to RGB[9]
@@ -106,9 +106,17 @@ set_location_assignment PIN_K21 -to RGB[1]
 set_location_assignment PIN_K22 -to RGB[0]
 set_location_assignment PIN_P21 -to Bin_PS2
 set_location_assignment PIN_P22 -to clk_PS2
-set_global_assignment -name BDF_FILE !modules/tiles4x1.bdf
-set_global_assignment -name BDF_FILE !modules/tiles20x1.bdf
-set_global_assignment -name BDF_FILE !modules/tiles20x10.bdf
+set_global_assignment -name BDF_FILE !modules/Maja/Tetrimini.bdf
+set_global_assignment -name BDF_FILE !modules/Maja/Layer.bdf
+set_global_assignment -name BDF_FILE !modules/Maja/Crtanje.bdf
+set_global_assignment -name BDF_FILE !modules/Danilo/utvrdjivanje.bdf
+set_global_assignment -name BDF_FILE !modules/Danilo/provera.bdf
+set_global_assignment -name BDF_FILE !modules/Danilo/kolizije.bdf
+set_global_assignment -name BDF_FILE !modules/Danilo/generisanje.bdf
+set_global_assignment -name BDF_FILE !modules/Danilo/gearbox.bdf
+set_global_assignment -name BDF_FILE !modules/Marko/tiles4x1.bdf
+set_global_assignment -name BDF_FILE !modules/Marko/tiles20x1.bdf
+set_global_assignment -name BDF_FILE !modules/Marko/tiles20x10.bdf
 set_global_assignment -name BDF_FILE !modules/test_modules.bdf
 set_global_assignment -name VHDL_FILE !components/arithmetic/CONST.vhd
 set_global_assignment -name BDF_FILE !components/arithmetic/RANDOM.bdf

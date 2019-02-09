@@ -7,3 +7,6 @@ simulation/
 *.bak
 main_nativelink_simulation.rpt
 main.qws
+
+/!modules/Maja/Archive
+/!modules/Danilo/Archive
