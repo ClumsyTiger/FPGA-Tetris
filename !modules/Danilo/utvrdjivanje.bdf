@@ -167,7 +167,7 @@ applicable agreement for further details.
 	(input)
 	(rect 72 288 240 304)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "DaljiRad" (rect 5 0 47 12)(font "Arial" ))
+	(text "DaljiRad" (rect 5 0 46 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -1048,6 +1048,92 @@ applicable agreement for further details.
 	)
 	(annotation_block (parameter)(rect 344 -48 526 -6))
 )
+(symbol
+	(rect 1328 816 1472 944)
+	(text "REGL" (rect 5 0 34 12)(font "Arial" ))
+	(text "inst" (rect 8 112 25 124)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Din[wid-1..0]" (rect 0 0 61 12)(font "Arial" ))
+		(text "Din[]" (rect 21 27 44 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ld" (rect 0 0 8 12)(font "Arial" ))
+		(text "ld" (rect 21 43 29 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "cl" (rect 0 0 8 12)(font "Arial" ))
+		(text "cl" (rect 21 59 29 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 91 35 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 144 32)
+		(output)
+		(text "Dout[wid-1..0]" (rect -56 0 12 12)(font "Arial" ))
+		(text "Dout[]" (rect 98 27 128 39)(font "Arial" ))
+		(line (pt 144 32)(pt 128 32)(line_width 3))
+	)
+	(port
+		(pt 144 48)
+		(output)
+		(text "zeros" (rect -56 0 -31 12)(font "Arial" ))
+		(text "zeros" (rect 102 43 127 55)(font "Arial" ))
+		(line (pt 144 48)(pt 128 48))
+	)
+	(port
+		(pt 144 64)
+		(output)
+		(text "ones" (rect -56 0 -33 12)(font "Arial" ))
+		(text "ones" (rect 104 59 127 71)(font "Arial" ))
+		(line (pt 144 64)(pt 128 64))
+	)
+	(parameter
+		"wid"
+		"1"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"def_val"
+		"0"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(text " REGL" (rect 56 56 102 72)(font "Arial" (color 0 0 0)(font_size 10)(bold)))
+		(line (pt 16 88)(pt 24 96))
+		(line (pt 24 96)(pt 16 104))
+		(rectangle (rect 16 16 128 112))
+	)
+	(annotation_block (parameter)(rect 1472 768 1654 810))
+)
+(symbol
+	(rect 104 544 136 560)
+	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
+	(text "inst2" (rect 3 5 26 17)(font "Arial" )(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(line (pt 16 16)(pt 16 8))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8))
+	)
+)
 (connector
 	(text "0" (rect 233 490 245 495)(font "Arial" )(vertical))
 	(pt 248 512)
@@ -1385,7 +1471,38 @@ applicable agreement for further details.
 	(pt 872 1072)
 )
 (connector
-	(text "DaljiRad" (rect 1392 312 1433 324)(font "Arial" ))
+	(text "1" (rect 1272 832 1277 844)(font "Arial" ))
+	(pt 1328 848)
+	(pt 1264 848)
+	(bus)
+)
+(connector
+	(text "DaljiRad" (rect 1280 848 1321 860)(font "Arial" ))
+	(pt 1328 864)
+	(pt 1272 864)
+)
+(connector
+	(text "clk" (rect 1280 896 1294 908)(font "Arial" ))
+	(pt 1328 912)
+	(pt 1272 912)
+)
+(connector
+	(text "kraj" (rect 1480 832 1497 844)(font "Arial" ))
+	(pt 1472 848)
+	(pt 1544 848)
+	(bus)
+)
+(connector
+	(text "kraj" (rect 1392 312 1409 324)(font "Arial" ))
 	(pt 1456 328)
 	(pt 1384 328)
+)
+(connector
+	(pt 120 608)
+	(pt 128 608)
+)
+(connector
+	(text "1" (rect 104 587 116 592)(font "Arial" )(vertical))
+	(pt 120 560)
+	(pt 120 608)
 )

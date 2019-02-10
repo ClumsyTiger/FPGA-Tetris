@@ -54,8 +54,8 @@ applicable agreement for further details.
 	(port
 		(pt 136 48)
 		(output)
-		(text "read" (rect -24 0 1 14)(font "Arial" (font_size 8)))
-		(text "read" (rect 98 43 123 57)(font "Arial" (font_size 8)))
+		(text "nextkey" (rect -24 0 20 14)(font "Arial" (font_size 8)))
+		(text "nextkey" (rect 79 43 123 57)(font "Arial" (font_size 8)))
 		(line (pt 136 48)(pt 120 48))
 	)
 	(drawing

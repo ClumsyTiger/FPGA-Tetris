@@ -66,17 +66,24 @@ applicable agreement for further details.
 		(line (pt 0 144)(pt 16 144))
 	)
 	(port
+		(pt 0 168)
+		(input)
+		(text "clrows" (rect 0 0 40 14)(font "Arial" (font_size 8)))
+		(text "clrows" (rect 21 163 61 177)(font "Arial" (font_size 8)))
+		(line (pt 0 168)(pt 16 168))
+	)
+	(port
 		(pt 136 32)
 		(output)
 		(text "D[2..0]" (rect 8 0 44 14)(font "Arial" (font_size 8)))
-		(text "D[2..0]" (rect 79 27 115 41)(font "Arial" (font_size 8)))
+		(text "D[2..0]" (rect 87 27 123 41)(font "Arial" (font_size 8)))
 		(line (pt 136 32)(pt 120 32)(line_width 3))
 	)
 	(port
 		(pt 136 48)
 		(output)
-		(text "read" (rect 8 0 33 14)(font "Arial" (font_size 8)))
-		(text "read" (rect 90 43 115 57)(font "Arial" (font_size 8)))
+		(text "bisy" (rect 8 0 31 14)(font "Arial" (font_size 8)))
+		(text "bisy" (rect 100 43 123 57)(font "Arial" (font_size 8)))
 		(line (pt 136 48)(pt 120 48))
 	)
 	(drawing

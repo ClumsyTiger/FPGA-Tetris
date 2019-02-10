@@ -4,7 +4,7 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 1991-2013 Altera Corporation
+Copyright (C) 1991-2014 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 	(input)
 	(rect 16 24 184 40)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "inRGB[11..0]" (rect 5 0 69 12)(font "Arial" ))
+	(text "inRGB[11..0]" (rect 5 0 68 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -1020,3 +1020,14 @@ applicable agreement for further details.
 (text "     drawx      hsync           clx" (rect 1232 72 1472 91)(font "Arial" (color 0 0 0)(font_size 12)(bold)))
 (text "ovde je ipak 1040!" (rect 544 296 703 315)(font "Arial" (color 0 0 0)(font_size 12)(bold)))
 (text "ovde je ipak 666!" (rect 1104 296 1252 315)(font "Arial" (color 0 0 0)(font_size 12)(bold)))
+(text "draw" (rect 112 640 142 654)(font "Arial" (font_size 8)))
+(text "newf" (rect 368 808 398 822)(font "Arial" (font_size 8)))
+(text "newl" (rect 344 696 372 710)(font "Arial" (font_size 8)))
+(text "hsync" (rect 296 696 331 710)(font "Arial" (font_size 8)))
+(text "vsync" (rect 184 776 219 790)(font "Arial" (font_size 8)))
+(rectangle (rect 16 576 248 728))
+(rectangle (rect 16 576 360 824))
+(rectangle (rect 352 576 360 824))
+(rectangle (rect 288 576 320 824))
+(rectangle (rect 16 768 360 800))
+(circle (rect 352 816 360 824))
