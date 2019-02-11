@@ -68,8 +68,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 168)
 		(input)
-		(text "clrows" (rect 0 0 40 14)(font "Arial" (font_size 8)))
-		(text "clrows" (rect 21 163 61 177)(font "Arial" (font_size 8)))
+		(text "sh" (rect 0 0 14 14)(font "Arial" (font_size 8)))
+		(text "sh" (rect 21 163 35 177)(font "Arial" (font_size 8)))
 		(line (pt 0 168)(pt 16 168))
 	)
 	(port

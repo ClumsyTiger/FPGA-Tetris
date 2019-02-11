@@ -4,7 +4,7 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 1991-2013 Altera Corporation
+Copyright (C) 1991-2014 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect -2240 -648 -2072 -632)
+	(rect -2240 -544 -2072 -528)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "clk" (rect 5 0 19 12)(font "Arial" ))
 	(pt 168 8)
@@ -34,11 +34,11 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect -2296 -576 -2240 -560))
+	(annotation_block (location)(rect -2304 -544 -2248 -528))
 )
 (pin
 	(input)
-	(rect -2240 -448 -2072 -432)
+	(rect -2240 -504 -2072 -488)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "inmem[2..0]" (rect 5 0 64 12)(font "Arial" ))
 	(pt 168 8)
@@ -54,23 +54,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -2240 -416 -2064 -400)
-	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "currentinfo[4..0]" (rect 5 0 84 12)(font "Arial" ))
-	(pt 176 8)
-	(drawing
-		(line (pt 92 12)(pt 117 12))
-		(line (pt 92 4)(pt 117 4))
-		(line (pt 121 8)(pt 176 8))
-		(line (pt 92 12)(pt 92 4))
-		(line (pt 117 4)(pt 121 8))
-		(line (pt 117 12)(pt 121 8))
-	)
-	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
-	(rect -2240 -616 -2072 -600)
+	(rect -2240 -648 -2072 -632)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "X[10..0]" (rect 5 0 42 12)(font "Arial" ))
 	(pt 168 8)
@@ -86,7 +70,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -2240 -592 -2072 -576)
+	(rect -2240 -624 -2072 -608)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "Y[10..0]" (rect 5 0 45 12)(font "Arial" ))
 	(pt 168 8)
@@ -102,7 +86,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -2240 -504 -2048 -488)
+	(rect -2240 -472 -2048 -456)
 	(text "INPUT" (rect 149 0 177 10)(font "Arial" (font_size 6)))
 	(text "xleftcurrent[10..0]" (rect 5 0 93 12)(font "Arial" ))
 	(pt 192 8)
@@ -118,7 +102,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -2240 -480 -2048 -464)
+	(rect -2240 -448 -2048 -432)
 	(text "INPUT" (rect 149 0 177 10)(font "Arial" (font_size 6)))
 	(text "ytopcurrent[10..0]" (rect 5 0 93 12)(font "Arial" ))
 	(pt 192 8)
@@ -134,7 +118,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -2240 -568 -2072 -552)
+	(rect -2240 -600 -2072 -584)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "newl" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
@@ -151,7 +135,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -2240 -544 -2072 -528)
+	(rect -2240 -576 -2072 -560)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "newf" (rect 5 0 28 12)(font "Arial" ))
 	(pt 168 8)
@@ -168,7 +152,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -2240 -392 -2064 -376)
+	(rect -2240 -360 -2064 -344)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "next1info[4..0]" (rect 5 0 76 12)(font "Arial" ))
 	(pt 176 8)
@@ -184,7 +168,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -2240 -368 -2064 -352)
+	(rect -2240 -336 -2064 -320)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "next2info[4..0]" (rect 5 0 76 12)(font "Arial" ))
 	(pt 176 8)
@@ -200,7 +184,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -2240 -344 -2064 -328)
+	(rect -2240 -312 -2064 -296)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "next3info[4..0]" (rect 5 0 76 12)(font "Arial" ))
 	(pt 176 8)
@@ -213,6 +197,38 @@ applicable agreement for further details.
 		(line (pt 117 12)(pt 121 8))
 	)
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -2240 -384 -2072 -368)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "currinfo[4..0]" (rect 5 0 68 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -2240 -408 -2072 -392)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "drawcurr" (rect 5 0 47 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(output)
@@ -2502,6 +2518,38 @@ applicable agreement for further details.
 	)
 	(annotation_block (parameter)(rect -472 680 -290 708))
 )
+(symbol
+	(rect -1992 -392 -1928 -344)
+	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
+	(text "inst2" (rect 3 37 26 49)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 14 32))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(line (pt 42 24)(pt 64 24))
+	)
+	(drawing
+		(line (pt 14 12)(pt 30 12))
+		(line (pt 14 37)(pt 31 37))
+		(line (pt 14 12)(pt 14 37))
+		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
+	)
+)
 (connector
 	(text "clk" (rect -1728 -400 -1714 -388)(font "Arial" ))
 	(pt -1704 -384)
@@ -3515,6 +3563,22 @@ applicable agreement for further details.
 	(text "outRGB[11..0]" (rect -2015 -656 -1945 -644)(font "Arial" ))
 	(pt -2016 -640)
 	(pt -1944 -640)
+	(bus)
+)
+(connector
+	(text "drawcurr" (rect -2032 -376 -1991 -364)(font "Arial" ))
+	(pt -1992 -360)
+	(pt -2032 -360)
+)
+(connector
+	(text "currentinfo[4..0]" (rect -1920 -384 -1841 -372)(font "Arial" ))
+	(pt -1928 -368)
+	(pt -1856 -368)
+	(bus)
+)
+(connector
+	(pt -2072 -376)
+	(pt -1992 -376)
 	(bus)
 )
 (text "main" (rect -1128 -560 -1085 -541)(font "Arial" (color 0 0 0)(font_size 12)(bold)))

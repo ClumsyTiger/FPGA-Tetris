@@ -1348,11 +1348,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "1" (rect 432 384 437 396)(font "Arial" ))
-	(pt 424 400)
-	(pt 448 400)
-)
-(connector
 	(text "break" (rect 454 -16 481 -4)(font "Arial" ))
 	(pt 520 0)
 	(pt 440 0)
