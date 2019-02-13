@@ -114,6 +114,13 @@ applicable agreement for further details.
 		(text "newy[4..0]" (rect 102 139 163 153)(font "Arial" (font_size 8)))
 		(line (pt 184 144)(pt 168 144)(line_width 3))
 	)
+	(port
+		(pt 184 160)
+		(output)
+		(text "value[29..0]" (rect 0 0 66 14)(font "Arial" (font_size 8)))
+		(text "value[29..0]" (rect 97 155 163 169)(font "Arial" (font_size 8)))
+		(line (pt 184 160)(pt 168 160)(line_width 3))
+	)
 	(drawing
 		(rectangle (rect 16 16 168 176))
 	)

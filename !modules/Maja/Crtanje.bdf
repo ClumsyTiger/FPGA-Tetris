@@ -4,7 +4,7 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 1991-2014 Altera Corporation
+Copyright (C) 1991-2013 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -218,7 +218,7 @@ applicable agreement for further details.
 	(input)
 	(rect -2240 -408 -2072 -392)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "drawcurr" (rect 5 0 47 12)(font "Arial" ))
+	(text "drawcurr" (rect 5 0 46 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -3560,12 +3560,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "outRGB[11..0]" (rect -2015 -656 -1945 -644)(font "Arial" ))
-	(pt -2016 -640)
-	(pt -1944 -640)
-	(bus)
-)
-(connector
 	(text "drawcurr" (rect -2032 -376 -1991 -364)(font "Arial" ))
 	(pt -1992 -360)
 	(pt -2032 -360)
@@ -3579,6 +3573,12 @@ applicable agreement for further details.
 (connector
 	(pt -2072 -376)
 	(pt -1992 -376)
+	(bus)
+)
+(connector
+	(text "outRGB[11..0]" (rect -2016 -656 -1946 -644)(font "Arial" ))
+	(pt -1944 -640)
+	(pt -2024 -640)
 	(bus)
 )
 (text "main" (rect -1128 -560 -1085 -541)(font "Arial" (color 0 0 0)(font_size 12)(bold)))

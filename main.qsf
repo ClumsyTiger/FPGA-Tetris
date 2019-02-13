@@ -133,6 +133,8 @@ set_location_assignment PIN_P22 -to clk_PS2
 set_global_assignment -name BDF_FILE !modules/Maja/Tetrimini.bdf
 set_global_assignment -name BDF_FILE !modules/Maja/Layer.bdf
 set_global_assignment -name BDF_FILE !modules/Maja/Crtanje.bdf
+set_global_assignment -name BDF_FILE !modules/Danilo/transiver.bdf
+set_global_assignment -name BDF_FILE !modules/Danilo/mis.bdf
 set_global_assignment -name BDF_FILE !modules/Danilo/upistetrimin.bdf
 set_global_assignment -name BDF_FILE !modules/Danilo/utvrdjivanje.bdf
 set_global_assignment -name BDF_FILE !modules/Danilo/provera.bdf
