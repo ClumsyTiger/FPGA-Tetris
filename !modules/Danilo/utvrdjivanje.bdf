@@ -1024,16 +1024,6 @@ applicable agreement for further details.
 	(pt 1336 576)
 )
 (connector
-	(pt 1328 240)
-	(pt 1328 248)
-)
-(connector
-	(text "d,l,des,rl,rd,v" (rect 1338 224 1404 236)(font "Arial" ))
-	(pt 1408 240)
-	(pt 1328 240)
-	(bus)
-)
-(connector
 	(text "tren[15..0]" (rect 272 256 322 268)(font "Arial" ))
 	(pt 328 272)
 	(pt 264 272)
@@ -1311,4 +1301,10 @@ applicable agreement for further details.
 	(text "d" (rect 1265 304 1270 316)(font "Arial" ))
 	(pt 1264 320)
 	(pt 1312 320)
+)
+(connector
+	(text "v, d, l, des, rl, rd" (rect 1330 224 1413 236)(font "Arial" ))
+	(pt 1408 240)
+	(pt 1328 240)
+	(bus)
 )
