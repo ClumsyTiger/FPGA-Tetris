@@ -2718,11 +2718,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "1" (rect -944 56 -939 68)(font "Arial" ))
-	(pt -968 72)
-	(pt -928 72)
-)
-(connector
 	(text "1" (rect 0 472 5 484)(font "Arial" ))
 	(pt -8 488)
 	(pt 16 488)
@@ -3343,11 +3338,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "draw1" (rect -990 -512 -962 -500)(font "Arial" ))
-	(pt -1032 -496)
-	(pt -960 -496)
-)
-(connector
 	(text "maintx[4..0]" (rect -1014 -496 -955 -484)(font "Arial" ))
 	(pt -1032 -480)
 	(pt -960 -480)
@@ -3580,6 +3570,16 @@ applicable agreement for further details.
 	(pt -1944 -640)
 	(pt -2024 -640)
 	(bus)
+)
+(connector
+	(text "draw1" (rect -990 -512 -962 -500)(font "Arial" ))
+	(pt -1032 -496)
+	(pt -960 -496)
+)
+(connector
+	(text "1" (rect -960 56 -955 68)(font "Arial" ))
+	(pt -968 72)
+	(pt -928 72)
 )
 (text "main" (rect -1128 -560 -1085 -541)(font "Arial" (color 0 0 0)(font_size 12)(bold)))
 (text "next1" (rect -768 -560 -719 -541)(font "Arial" (color 0 0 0)(font_size 12)(bold)))

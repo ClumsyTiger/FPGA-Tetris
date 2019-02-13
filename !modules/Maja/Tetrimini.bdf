@@ -101,7 +101,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 2216 392 2392 408)
+	(rect 2088 392 2264 408)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "MATRICA[15..0]" (rect 90 0 170 12)(font "Arial" ))
 	(pt 0 8)
@@ -2684,12 +2684,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "reverse[0..15]" (rect 2032 384 2101 396)(font "Arial" ))
-	(pt 2088 400)
-	(pt 2024 400)
-	(bus)
-)
-(connector
 	(text "1" (rect 1808 1040 1813 1052)(font "Arial" ))
 	(pt 1800 1056)
 	(pt 1832 1056)
@@ -2704,12 +2698,6 @@ applicable agreement for further details.
 	(text "<<__$DEF_ALIAS16347>>" (rect 2032 752 2161 764)(font "Arial" )(invisible))
 	(pt 1952 768)
 	(pt 2064 768)
-	(bus)
-)
-(connector
-	(text "reverse[0..15]" (rect 2152 384 2221 396)(font "Arial" ))
-	(pt 2144 400)
-	(pt 2216 400)
 	(bus)
 )
 (connector
@@ -2806,6 +2794,12 @@ applicable agreement for further details.
 	(text "MATRICA[0]" (rect 1769 1016 1830 1028)(font "Arial" ))
 	(pt 1832 1032)
 	(pt 1760 1032)
+	(bus)
+)
+(connector
+	(text "<<__$DEF_ALIAS11547>>" (rect 2032 384 2161 396)(font "Arial" )(invisible))
+	(pt 2088 400)
+	(pt 2024 400)
 	(bus)
 )
 (junction (pt 704 816))

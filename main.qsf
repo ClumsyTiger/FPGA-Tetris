@@ -142,7 +142,6 @@ set_global_assignment -name BDF_FILE !modules/Maja/Layer.bdf
 set_global_assignment -name BDF_FILE !modules/Maja/Crtanje.bdf
 set_global_assignment -name BDF_FILE !modules/Danilo/upistetrimin.bdf
 set_global_assignment -name BDF_FILE !modules/Danilo/utvrdjivanje.bdf
-set_global_assignment -name BDF_FILE !modules/Danilo/provera.bdf
 set_global_assignment -name BDF_FILE !modules/Danilo/kolizije.bdf
 set_global_assignment -name BDF_FILE !modules/Danilo/generisanje.bdf
 set_global_assignment -name BDF_FILE !modules/Danilo/gearbox.bdf
