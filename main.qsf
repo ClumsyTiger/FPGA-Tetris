@@ -72,6 +72,9 @@ set_location_assignment PIN_J6 -to sw[0]
 set_location_assignment PIN_F1 -to notbtn[2]
 set_location_assignment PIN_G3 -to notbtn[1]
 set_location_assignment PIN_H2 -to notbtn[0]
+set_location_assignment PIN_AB15 -to joyx
+set_location_assignment PIN_AA16 -to joyy
+set_location_assignment PIN_AB16 -to joybtn
 set_location_assignment PIN_B1 -to led[9]
 set_location_assignment PIN_B2 -to led[8]
 set_location_assignment PIN_C2 -to led[7]
@@ -135,11 +138,14 @@ set_location_assignment PIN_R21 -to clk2_PS2
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name BDF_FILE !modules/Maja/mouse.bdf
 set_global_assignment -name BDF_FILE !modules/Maja/transiver.bdf
 set_global_assignment -name BDF_FILE !modules/Maja/mis.bdf
 set_global_assignment -name BDF_FILE !modules/Maja/Tetrimini.bdf
 set_global_assignment -name BDF_FILE !modules/Maja/Layer.bdf
+set_global_assignment -name BDF_FILE !modules/Maja/Curr.bdf
 set_global_assignment -name BDF_FILE !modules/Maja/Crtanje.bdf
+set_global_assignment -name BDF_FILE !modules/Danilo/dzojstik.bdf
 set_global_assignment -name BDF_FILE !modules/Danilo/upistetrimin.bdf
 set_global_assignment -name BDF_FILE !modules/Danilo/utvrdjivanje.bdf
 set_global_assignment -name BDF_FILE !modules/Danilo/kolizije.bdf

@@ -4,7 +4,7 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 1991-2014 Altera Corporation
+Copyright (C) 1991-2013 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -3154,5 +3154,5 @@ applicable agreement for further details.
 	(pt 1775 992)
 	(bus)
 )
-(text "testirati cd16, dc16" (rect 744 936 852 950)(font "Arial" (font_size 8)))
-(text "testirati keyboard" (rect 1696 1024 1793 1038)(font "Arial" (font_size 8)))
+(text "ne radi dobro - quartus se buni" (rect 2016 504 2191 518)(font "Arial" (font_size 8)))
+(text "preimenovati u edge" (rect 2016 608 2130 622)(font "Arial" (font_size 8)))
