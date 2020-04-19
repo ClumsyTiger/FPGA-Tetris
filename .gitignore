@@ -1,12 +1,11 @@
----/
-db/
-incremental_db/
-output_files/
-simulation/
+/db/
+/incremental_db/
+/output_files/
+/simulation/
 
+/main_nativelink_simulation.rpt
+/main.qws
 *.bak
-main_nativelink_simulation.rpt
-main.qws
 *.db
 
 
